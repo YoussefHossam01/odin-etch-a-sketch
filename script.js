@@ -1,6 +1,6 @@
 // Select container to manipulate
 const container = document.querySelector(".container");
 
-// create the basic box Div element
-const boxDiv = document.createElement("div");
-boxDiv.className = "box";
+// create the basic square Div element
+const squareDiv = document.createElement("div");
+squareDiv.className = "square";
