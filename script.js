@@ -27,11 +27,11 @@ for (let i = 0; i < GRIDSIZE; i++){
         });
         container.appendChild(squareDiv);
 
-        squareDiv.addEventListener("touchmove", () => {
+        squareDiv.addEventListener("pointerenter", () => {
             squareDiv.style.backgroundColor = 'red'
         });
 
-        squareDiv.addEventListener("touchend", () => {
+        squareDiv.addEventListener("pointerleave", () => {
             squareDiv.style.backgroundColor = 'blue'
         });
     }
