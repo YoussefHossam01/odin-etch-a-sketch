@@ -26,13 +26,5 @@ for (let i = 0; i < GRIDSIZE; i++){
             squareDiv.style.backgroundColor = 'blue'
         });
         container.appendChild(squareDiv);
-
-        squareDiv.addEventListener("pointerenter", () => {
-            squareDiv.style.backgroundColor = 'red'
-        });
-
-        squareDiv.addEventListener("pointerleave", () => {
-            squareDiv.style.backgroundColor = 'blue'
-        });
     }
 }
