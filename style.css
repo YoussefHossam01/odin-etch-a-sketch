@@ -4,24 +4,26 @@
     padding: 0px;
     margin: 0px;
     box-sizing: content-box;
-    border: 1px solid black;
+    
 }
-
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: darkslategrey;
+        gap: 1px;
+    }
 .container{
     display:flex;
     width: 550px;
     flex: 1 1 1;
-    gap : 1px;
+    gap: 1px;
 }
 
 .square {
-    background-color: lightblue;
+    background-color: beige;
     flex: 1 1 0; 
+    gap : 1px;
 
 }
 
