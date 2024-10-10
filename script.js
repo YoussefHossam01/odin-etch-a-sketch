@@ -2,7 +2,7 @@
 const body = document.querySelector("body");
 
 const GRIDSIZE = 16;
-let cotainerWidth = 608;
+let cotainerWidth = 550;
 
 // Create a grid size by grid size grid dynamically.
 for (let i = 0; i < GRIDSIZE; i++){
@@ -23,6 +23,15 @@ for (let i = 0; i < GRIDSIZE; i++){
         });
 
         squareDiv.addEventListener("mouseleave", () => {
+            squareDiv.style.backgroundColor = 'blue'
+        });
+        container.appendChild(squareDiv);
+
+        squareDiv.addEventListener("touchmove", () => {
+            squareDiv.style.backgroundColor = 'red'
+        });
+
+        squareDiv.addEventListener("touchend", () => {
             squareDiv.style.backgroundColor = 'blue'
         });
     }
