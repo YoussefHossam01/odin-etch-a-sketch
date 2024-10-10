@@ -37,11 +37,17 @@ function gridCreate(){
 
             // Change square colors with motion
             squareDiv.addEventListener("mouseenter", () => {
-                squareDiv.style.backgroundColor = 'red'
+                squareDiv.style.backgroundColor = "rgb("+(Math.floor(Math.random() * 255))+","
+                                                        +(Math.floor(Math.random() * 255))+","
+                                                        +(Math.floor(Math.random() * 255))+")";
+                squareDiv.style.opacity -= "10%"
             });
 
             squareDiv.addEventListener("mouseleave", () => {
-                squareDiv.style.backgroundColor = 'blue'
+                squareDiv.style.backgroundColor = "rgb("+(Math.floor(Math.random() * 255))+","
+                                                        +(Math.floor(Math.random() * 255))+","
+                                                        +(Math.floor(Math.random() * 255))+")";
+                squareDiv.style.opacity -= "10%"
             });
             container.appendChild(squareDiv);
         }
